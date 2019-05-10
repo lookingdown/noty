@@ -5,7 +5,6 @@ import Promise from 'es6-promise'
 import * as Utils from 'utils'
 import * as API from 'api'
 import { NotyButton } from 'button'
-import { Push } from 'push'
 
 export default class Noty {
   /**
@@ -476,14 +475,6 @@ export default class Noty {
    */
   static version () {
     return VERSION
-  }
-
-  /**
-   * @param {String} workerPath
-   * @return {Push}
-   */
-  static Push (workerPath) {
-    return new Push(workerPath)
   }
 }
 
